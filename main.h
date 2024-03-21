@@ -7,6 +7,15 @@
 
 int _printf(const char *format, ...);
 
+/**
+ * struct Formats - Formats
+ *
+ * @type: type of format
+ * @func: function pointer
+ *
+ * Description: structure containing formating for printf
+ */
+
 typedef struct Formats
 {
 char *type;

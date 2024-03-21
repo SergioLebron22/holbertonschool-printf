@@ -1,5 +1,14 @@
 #include "main.h"
 
+/**
+ * get_format - will handle format funcion pointers
+ *
+ * @format_symbol: format letter
+ * @args: args being passed to be printed
+ *
+ * Return: 2
+ */
+
 int get_format(const char format_symbol, va_list args)
 {
 	formats f_array[] = {

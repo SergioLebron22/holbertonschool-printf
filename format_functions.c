@@ -28,7 +28,7 @@ int print_str(va_list args)
  *
  *@args: character passed
  *
- * Return: 0
+ * Return: 1
  */
 
 
