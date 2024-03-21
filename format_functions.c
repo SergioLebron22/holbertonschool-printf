@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -51,4 +49,7 @@ int print_percent(va_list args)
 	_putchar('%');
 	return (0);
 }
+
+
+
 

@@ -7,14 +7,15 @@
 
 int _printf(const char *format, ...);
 
-typedef struct Format
+typedef struct Formats
 {
-char t;
-void (*f)(va_list args);
-} format;
+char type;
+void (*func)(va_list args);
+} formats;
 
-void print_str(va_list args);
-void print_char(va_list args);
-void print_percent(va_list args);
+int print_str(va_list args);
+int print_char(va_list args);
+int print_percent(va_list args);
+int get_format(const char format_symbol, va_list args);
 
 #endif
