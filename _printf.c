@@ -20,15 +20,14 @@ int _printf(const char *format, ...)
 	if (format == NULL)
 	{
 		return (-1);
-	}
+
 	while(format[i] != '\0')
 	{
 		if(format[i] == '%')
 		{
 			i++;
 			if (format[i] =='\0')
-			{
-				return (-1);
+
 			}
 			count += get_format(format[i], argo);
 		}
@@ -37,20 +36,4 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 			count++;
 		}
-		i++;
-	}
-	va_end(argo);
-	return (count);
-}
-
-
-
-
-
-
-
-
-
-
-
 
