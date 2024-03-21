@@ -3,16 +3,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
-
+#include <unistd.h>
 
 int _printf(const char *format, ...);
 
 typedef struct Formats
 {
-char type;
-void (*func)(va_list args);
+char *type;
+int (*func)(va_list args);
 } formats;
 
+int _putchar(char c);
 int print_str(va_list args);
 int print_char(va_list args);
 int print_percent(va_list args);

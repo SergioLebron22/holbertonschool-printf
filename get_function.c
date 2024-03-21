@@ -13,7 +13,7 @@ int get_format(const char format_symbol, va_list args)
 	for (i = 0; f_array[i].type != NULL; i++)
 	{
 		if (format_symbol == f_array[i].type[0])
-			return (f_array[i].func(args);
+			return (f_array[i].func(args));
 	}
 
 	_putchar('%');

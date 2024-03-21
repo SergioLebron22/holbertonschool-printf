@@ -10,15 +10,17 @@
 
 int print_str(va_list args)
 {
-	int i;
+	int counter = 0;
 	char *str = va_arg(args, char *);
 
-	if (str[i] == '\0')
+	if (str == NULL)
 		str = "(null)";
-
-	for (i = 0; i != '\0'; i++)
-		_putchar(va_arg(args, char *));
-	return (i - 1);
+	while (*str != '\0')
+	{
+		_putchar(*str++);
+		counter++;
+	}
+		return (counter);
 }
 
 /**
@@ -44,10 +46,10 @@ int print_char(va_list args)
  * Return: 0
  */
 
-int print_percent(va_list args)
+int print_percent(__attribute__((unused)) va_list args)
 {
 	_putchar('%');
-	return (0);
+	return (1);
 }
 
 
