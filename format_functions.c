@@ -28,14 +28,14 @@ int print_str(va_list args)
  *
  *@args: character passed
  *
- * Return: 0
+ * Return: 1
  */
 
 
 int print_char(va_list args)
 {
 	_putchar(va_arg(args, int));
-	return (0);
+	return (1);
 }
 
 /**
