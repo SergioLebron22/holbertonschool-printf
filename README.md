@@ -15,7 +15,7 @@ all files are compile using this: gcc -Wall -Wextra -Werror -pedantic -std=gnu89
 int _printf(const char *format, ...)
 
 
-## Return 
+## Return
 
  when _printf executes successfully, it will provide the count of characters printed
 
@@ -38,5 +38,4 @@ int _printf(const char *format, ...)
  - You are not allowed to use global variables 
  
 ## Developers
-Sergio Lebron
-Nissel Sanchez
+Sergio Lebron<br>Nissel Sanchez
