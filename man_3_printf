@@ -15,6 +15,16 @@ The
 function writes output to stdout under the control of a format string
 that specifies how subsequent arguments (if any) are converted for output.
 
+.SH Formats
+
+.B %s print string in its place
+
+.B %d %i prints integer
+
+.B %c prints character
+
+.B %% prints percent
+
 .SH RETURN VALUE
 The
 .B _printf
@@ -35,7 +45,7 @@ function:
 .br
 .B {
 .br
-.B \ \ \ \ _'printf'("Hello, %s!\n", world");\fR
+.B \ \ \ \ _'printf'("Hello, %s!\n",World");\fR
 .br
 .B \ \ \ \ return 0;
 .br
