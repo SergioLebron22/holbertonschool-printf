@@ -27,5 +27,6 @@ int print_str(va_list args);
 int print_char(va_list args);
 int print_percent(va_list args);
 int get_format(const char format_symbol, va_list args);
+int print_int(va_list args);
 
 #endif

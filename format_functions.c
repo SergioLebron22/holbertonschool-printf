@@ -51,7 +51,44 @@ int print_percent(__attribute__((unused)) va_list args)
 	_putchar('%');
 	return (1);
 }
+/**
+ * print_int - will print a number
+ *
+ * @args: int passed
+ *
+ * Return: digit length
+ */
 
+int print_int(va_list args)
+{
+	int n = va_arg(args, int);
+	unsigned int abs_value, abs, len;
+	unsigned int counter = 1;
 
+	len = 0;
+
+	if (n < 0)
+	{
+		len = len + _putchar('-');
+		abs_value = n * -1;
+	}
+	else
+		abs_value = n;
+
+	abs = abs_value;
+
+	while (abs > 9)
+	{
+		abs = abs / 10;
+		counter = counter * 10;
+	}
+
+	while (counter >= 1)
+	{
+		len = len + _putchar(((abs_value / counter) % 10) + '0');
+		counter = counter / 10;
+	}
+	return (len);
+}
 
 
